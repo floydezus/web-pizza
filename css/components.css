@@ -1,0 +1,108 @@
+.btn {
+    background: rgb(220, 70, 60);
+    border: 0;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 18px 20px;
+    width: 240px;
+    max-width: 100%;
+    display: inline-block;
+    letter-spacing: .02em;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 38px 0 rgba(212, 66, 50, 0.8);
+    transition: all .2s;
+}
+
+.btn:hover {
+    background: rgb(212, 66, 50);;
+}
+
+.btn:active {
+    opacity: 80%;
+    transform: scale(.95);
+}
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: 16px;
+        padding: 16px 18px;
+        width: 220px;
+    }
+
+}
+
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.phone__item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 3px #fff solid;
+    border-radius: 22px;
+    padding: 8px 16px;
+    transition: all .2s;
+}
+
+.phone__item:hover {
+    color: #1f1f1f;
+    background: #fff;
+}
+
+.phone__item:active {
+    opacity: 0.8;
+}
+
+.btn-menu {
+    display: inline-block;
+    border: 0;
+    background: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-menu__box {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.btn-menu__inner:before,
+.btn-menu__inner:after,
+.btn-menu__inner {
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.btn-menu__inner {
+    position: relative;
+    top: 50%;
+    display: block;
+}
+
+.btn-menu__inner:before,
+.btn-menu__inner:after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.btn-menu__inner:before {
+    top: -10px;
+}
+
+.btn-menu__inner:after {
+    bottom: -10px;
+}
