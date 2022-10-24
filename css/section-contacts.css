@@ -1,0 +1,137 @@
+.section-contacts {
+    overflow: hidden;
+}
+
+.section-contacts__container {
+    position: relative;
+}
+
+.section-contacts__container:before {
+    content: '';
+    position: absolute;
+    width: 672px;
+    height: 397px;
+    background: url("../img/section-contacts/tomatoes.png") no-repeat;
+    background-size: cover;
+    bottom: -100px;
+    right: -350px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    justify-content: center;
+}
+
+.contacts__start,.contacts__end {
+    width: 50%;
+}
+
+.contacts__start {
+
+}
+
+.contacts__end {
+
+}
+
+.contacts__map {
+    height: 450px;
+    background: yellow;
+}
+
+.contacts__item {
+    margin-bottom: 35px;
+}
+
+.contacts__title {
+    margin: 0 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.contacts__text {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s;
+}
+
+.contacts__phone:hover {
+    color: #ffa650;
+}
+
+@media (max-width: 1800px) {
+
+    .section-contacts__container:before {
+        right: -250px;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    .section-contacts__container:before {
+        right: -150px;
+        bottom: -200px;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .section-contacts__container:before {
+        right: -100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-contacts__container:before {
+        right: -50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-contacts__container:before {
+        content: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts__map{
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .section-contacts {
+        margin-bottom: 0;
+    }
+
+    .contacts__start{
+        order: 1;
+        width: 100%;
+    }
+
+    .contacts__end {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contacts__map {
+        margin: 0 -20px;
+        height: 300px;
+    }
+}

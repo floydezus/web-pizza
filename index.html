@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header-page.css">
     <link rel="stylesheet" href="css/section-top.css">
+    <link rel="stylesheet" href="css/section-about.css">
+    <link rel="stylesheet" href="css/section-contacts.css">
+    <link rel="stylesheet" href="css/footer-page.css">
+
 
     <title>Document</title>
 </head>
@@ -321,5 +325,71 @@
     </div>
 </section>
 <!--section-catalog-->
+
+<!--section-about-->
+<section class="section section-about">
+    <img src="img/section-about/bg.jpeg" alt="About" class="section-about__img">
+    <div class="container section-about__container">
+        <div class="section-about__content">
+            <h2 class="section__title section-about__title">
+                About
+            </h2>
+            <p class="section-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cupiditate dignissimos earum facere, iste iusto pariatur sapiente tenetur ut.</p>
+        </div>
+    </div>
+</section>
+
+<!--section-about-->
+
+<!-- section-contacts -->
+<section class="section section-contacts">
+    <div class="container section-contacts__container">
+        <header class="section__header">
+            <h2 class="section__title section-contacts__title">Contacts</h2>
+        </header>
+        <div class="contacts">
+            <div class="contacts__start">
+                <div class="contacts__map"></div>
+            </div>
+            <div class="contacts__end">
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Address</h3>
+                    <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ipsam obcaecati pariatur quis ratione!</p>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Phone</h3>
+                    <p class="contacts__text">
+                        <a href="tel:+39999999999" class="contacts__phone">+3(999)999-99-99</a>
+                    </p>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Socials</h3>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" target="_blank">
+                                <svg class="socials__icon socials__icon--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+                                    <defs>
+                                        <image width="512" height="512" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZBNjUwO30NCjwvc3R5bGU+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTMzMi4zLDEzNi4ySDE3OS43Yy0yNC40LDAtNDQuMiwxOS44LTQ0LjIsNDQuMlYzMzNjMCwyNC40LDE5LjgsNDQuMiw0NC4yLDQ0LjJoMTUyLjYNCgkJCWMyNC40LDAsNDQuMi0xOS44LDQ0LjItNDQuMlYxODAuNEMzNzYuNSwxNTYsMzU2LjcsMTM2LjIsMzMyLjMsMTM2LjJ6IE0yNTYsMzM2Yy00My43LDAtNzkuMy0zNS42LTc5LjMtNzkuMw0KCQkJYzAtNDMuNywzNS42LTc5LjMsNzkuMy03OS4zYzQzLjcsMCw3OS4zLDM1LjYsNzkuMyw3OS4zQzMzNS4zLDMwMC40LDI5OS43LDMzNiwyNTYsMzM2eiBNMzM3LjksMTkzLjhjLTEwLjQsMC0xOC44LTguNC0xOC44LTE4LjgNCgkJCWMwLTEwLjMsOC40LTE4LjgsMTguOC0xOC44YzEwLjMsMCwxOC44LDguNCwxOC44LDE4LjhDMzU2LjYsMTg1LjQsMzQ4LjIsMTkzLjgsMzM3LjksMTkzLjh6Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yNTYsMjEwLjljLTI1LjIsMC00NS44LDIwLjUtNDUuOCw0NS44YzAsMjUuMywyMC42LDQ1LjgsNDUuOCw0NS44YzI1LjMsMCw0NS44LTIwLjYsNDUuOC00NS44DQoJCQlDMzAxLjgsMjMxLjQsMjgxLjMsMjEwLjksMjU2LDIxMC45eiIvPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDBDMTE0LjYsMCwwLDExNC42LDAsMjU2czExNC42LDI1NiwyNTYsMjU2czI1Ni0xMTQuNiwyNTYtMjU2UzM5Ny40LDAsMjU2LDB6IE00MTAsMzMzDQoJCQljMCw0Mi44LTM0LjgsNzcuNy03Ny43LDc3LjdIMTc5LjdjLTQyLjgsMC03Ny43LTM0LjgtNzcuNy03Ny43VjE4MC40YzAtNDIuOCwzNC45LTc3LjcsNzcuNy03Ny43aDE1Mi42DQoJCQljNDIuOCwwLDc3LjcsMzQuOSw3Ny43LDc3LjdWMzMzeiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K"/>
+                                    </defs>
+                                    <use  href="#img1" transform="matrix(.068,0,0,.068,0,0)"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section-contacts -->
+
+<!-- footer-page -->
+<footer class="footer-page">
+    <div class="container">
+        <div class="footer-page__text">Lorem ipsum dolor sit amet, 2022</div>
+    </div>
+</footer>
+<!-- footer-page -->
+
 </body>
 </html>
