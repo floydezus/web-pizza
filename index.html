@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/section-about.css">
     <link rel="stylesheet" href="css/section-contacts.css">
     <link rel="stylesheet" href="css/footer-page.css">
-
+    <link rel="stylesheet" href="css/popup.css">
 
     <title>Document</title>
 </head>
@@ -34,7 +34,7 @@
         </div>
         <div class="header-page__end">
             <nav class="header-page__nav">
-                <ul class="header-pade__list">
+                <ul class="header-page__list">
                     <li class="header-page__li">
                         <a href="#" class="header-page__link">
                             <span class="header-page__text">Pizza</span>
@@ -83,7 +83,7 @@
 <section class="section section-catalog">
     <div class="container">
         <header class="section__header">
-            <h2 class="section__title section__title--accent">
+            <h2 class="page-title page-title--accent">
                 Menu
             </h2>
             <nav class="catalog-nav">
@@ -331,7 +331,7 @@
     <img src="img/section-about/bg.jpeg" alt="About" class="section-about__img">
     <div class="container section-about__container">
         <div class="section-about__content">
-            <h2 class="section__title section-about__title">
+            <h2 class="page-title section-about__title">
                 About
             </h2>
             <p class="section-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cupiditate dignissimos earum facere, iste iusto pariatur sapiente tenetur ut.</p>
@@ -345,7 +345,7 @@
 <section class="section section-contacts">
     <div class="container section-contacts__container">
         <header class="section__header">
-            <h2 class="section__title section-contacts__title">Contacts</h2>
+            <h2 class="page-title section-contacts__title">Contacts</h2>
         </header>
         <div class="contacts">
             <div class="contacts__start">
@@ -390,6 +390,123 @@
     </div>
 </footer>
 <!-- footer-page -->
+
+<!-- popup-menu -->
+<div class="popup popup__menu">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content popup__content--fluid popup__content--centered">
+                <div class="btn-close popup__btn-close"></div>
+                <nav class="mobile-menu popup__mobile-menu">
+                    <ul class="mobile-menu__ul">
+                        <li class="mobile-menu__li">
+                            <a href="#" class="mobile-menu__link">
+                              Pizza
+                            </a>
+                        </li>
+                        <li class="mobile-menu__li">
+                            <a href="#" class="mobile-menu__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="mobile-menu__li">
+                            <a href="#" class="mobile-menu__link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phone popup__phone">
+                    <a href="tel:+39999999999" class="phone__item phone__item--accent">+3(999)999-99-99</a>
+                </div>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" target="_blank">
+                            <svg class="socials__icon socials__icon--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+                                <defs>
+                                    <image width="512" height="512" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZBNjUwO30NCjwvc3R5bGU+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTMzMi4zLDEzNi4ySDE3OS43Yy0yNC40LDAtNDQuMiwxOS44LTQ0LjIsNDQuMlYzMzNjMCwyNC40LDE5LjgsNDQuMiw0NC4yLDQ0LjJoMTUyLjYNCgkJCWMyNC40LDAsNDQuMi0xOS44LDQ0LjItNDQuMlYxODAuNEMzNzYuNSwxNTYsMzU2LjcsMTM2LjIsMzMyLjMsMTM2LjJ6IE0yNTYsMzM2Yy00My43LDAtNzkuMy0zNS42LTc5LjMtNzkuMw0KCQkJYzAtNDMuNywzNS42LTc5LjMsNzkuMy03OS4zYzQzLjcsMCw3OS4zLDM1LjYsNzkuMyw3OS4zQzMzNS4zLDMwMC40LDI5OS43LDMzNiwyNTYsMzM2eiBNMzM3LjksMTkzLjhjLTEwLjQsMC0xOC44LTguNC0xOC44LTE4LjgNCgkJCWMwLTEwLjMsOC40LTE4LjgsMTguOC0xOC44YzEwLjMsMCwxOC44LDguNCwxOC44LDE4LjhDMzU2LjYsMTg1LjQsMzQ4LjIsMTkzLjgsMzM3LjksMTkzLjh6Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yNTYsMjEwLjljLTI1LjIsMC00NS44LDIwLjUtNDUuOCw0NS44YzAsMjUuMywyMC42LDQ1LjgsNDUuOCw0NS44YzI1LjMsMCw0NS44LTIwLjYsNDUuOC00NS44DQoJCQlDMzAxLjgsMjMxLjQsMjgxLjMsMjEwLjksMjU2LDIxMC45eiIvPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDBDMTE0LjYsMCwwLDExNC42LDAsMjU2czExNC42LDI1NiwyNTYsMjU2czI1Ni0xMTQuNiwyNTYtMjU2UzM5Ny40LDAsMjU2LDB6IE00MTAsMzMzDQoJCQljMCw0Mi44LTM0LjgsNzcuNy03Ny43LDc3LjdIMTc5LjdjLTQyLjgsMC03Ny43LTM0LjgtNzcuNy03Ny43VjE4MC40YzAtNDIuOCwzNC45LTc3LjcsNzcuNy03Ny43aDE1Mi42DQoJCQljNDIuOCwwLDc3LjcsMzQuOSw3Ny43LDc3LjdWMzMzeiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K"/>
+                                </defs>
+                                <use  href="#img1" transform="matrix(.068,0,0,.068,0,0)"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- popup-menu -->
+
+<!--popup-order-->
+<div class="popup popup-order">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <div class="btn-close popup__btn-close"></div>
+                <h2 class="popup__title page-title">Lorem ipsum</h2>
+                <p class="popup__subtitle popup__subtitle--order">Lorem ipsum dolor sit amet? Itaque, voluptate.</p>
+                <div class="order">
+                    <img src="img/section-catalog/1.png" alt="Order image" class="order__img">
+                    <h3 class="order__title">
+                        <span>Margherita</span>
+                        <span>6.80</span>&#x20AC;
+                    </h3>
+                    <p class="order__size">
+                        500 g
+                    </p>
+                    <form class="form">
+                        <input type="hidden" name="pizza">
+                        <input type="hidden" name="size">
+                        <input type="hidden" name="price">
+                        <label>
+                            <input type="text" class="form__input" placeholder="Name" name="name" required>
+                        </label>
+                        <label>
+                            <input type="text" class="form__input" placeholder="Phone" name="phone" required>
+                        </label>
+                        <label>
+                            <input type="text" class="form__input" placeholder="Address" name="address" required>
+                        </label>
+                        <label for="pay"></label><select name="pay" id="pay" class="form__input">
+                            <option value="Cash">Cash</option>
+                            <option value="Card">Card</option>
+                        </select>
+                        <button class="btn form__button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup-order-->
+
+<!--popup-thanks-->
+<div class="popup popup-thanks">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <div class="btn-close popup__btn-close"></div>
+                <h2 class="popup__title page-title">Successfully sent</h2>
+                <p class="popup__subtitle">We have already started baking your pizza</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup-thanks-->
+
+<!--popup-error-->
+<div class="popup popup-error">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <div class="btn-close popup__btn-close"></div>
+                <h2 class="popup__title page-title">Error!</h2>
+                <p class="popup__subtitle">Please, call on <a  class="popup__link" href="tel:39999999999">+3(999) 999-99-99</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup-error-->
 
 </body>
 </html>
