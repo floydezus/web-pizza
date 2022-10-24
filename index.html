@@ -36,17 +36,17 @@
             <nav class="header-page__nav">
                 <ul class="header-page__list">
                     <li class="header-page__li">
-                        <a href="#" class="header-page__link">
+                        <a href="#section-menu" class="header-page__link">
                             <span class="header-page__text">Pizza</span>
                         </a>
                     </li>
                     <li class="header-page__li">
-                        <a href="#" class="header-page__link">
+                        <a href="#section-about" class="header-page__link">
                             <span class="header-page__text">About</span>
                         </a>
                     </li>
                     <li class="header-page__li">
-                        <a href="#" class="header-page__link">
+                        <a href="#section-contacts" class="header-page__link">
                             <span class="header-page__text">Contacts</span>
                         </a>
                     </li>
@@ -56,7 +56,7 @@
                 <a href="tel:+39999999999" class="phone__item header-page__phone">+3(999)999-99-99</a>
             </div>
             <div class="header-page__hamburger">
-                <button class="btn-menu">
+                <button class="btn-menu" data-popup="popup-menu">
                     <span class="btn-menu__box">
                         <span class="btn-menu__inner"></span>
                     </span>
@@ -73,14 +73,14 @@
             <p class="section-top__info">From Italy with Love</p>
             <h1 class="section-top__title">Best Pizza in Budva</h1>
             <div class="section-top__btn">
-                <button class="btn" type="button">Choose</button>
+                <button class="btn" type="button" data-scroll-to="section-catalog">Choose</button>
             </div>
         </div>
     </section>
 <!--section-top-->
 
 <!--section-catalog-->
-<section class="section section-catalog">
+<section class="section section-catalog" id="section-menu">
     <div class="container">
         <header class="section__header">
             <h2 class="page-title page-title--accent">
@@ -89,23 +89,23 @@
             <nav class="catalog-nav">
                 <ul class="catalog-nav__wrapper">
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__button is-active" type="button">All</button>
+                        <button class="catalog-nav__button is-active" type="button" data-filter="all">All</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__button" type="button">Meat</button>
+                        <button class="catalog-nav__button" type="button" data-filter="meat">Meat</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__button" type="button">Mushroom</button>
+                        <button class="catalog-nav__button" type="button" data-filter="mushroom">Mushroom</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__button" type="button">Cheese</button>
+                        <button class="catalog-nav__button" type="button" data-filter="cheese">Cheese</button>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <div class="catalog">
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/1.png" alt="Margherita" class="product__img">
                     <div class="product__content">
@@ -123,13 +123,13 @@
                                 <span class="product__price-value">6.80</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="mushroom">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/2.png" alt="Funghi" class="product__img">
                     <div class="product__content">
@@ -147,13 +147,13 @@
                                 <span class="product__price-value">7.80</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn" data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/3.png" alt="Capricciosa" class="product__img">
                     <div class="product__content">
@@ -171,13 +171,13 @@
                                 <span class="product__price-value">8.20</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/4.png" alt="Quattro formaggi" class="product__img">
                     <div class="product__content">
@@ -195,13 +195,13 @@
                                 <span class="product__price-value">9.30</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/5.png" alt="Caprese" class="product__img">
                     <div class="product__content">
@@ -219,13 +219,13 @@
                                 <span class="product__price-value">9.20</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/6.png" alt="Calzone" class="product__img">
                     <div class="product__content">
@@ -243,13 +243,13 @@
                                 <span class="product__price-value">8.00</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/7.png" alt="Mortadella" class="product__img">
                     <div class="product__content">
@@ -267,13 +267,13 @@
                                 <span class="product__price-value">11.20</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/8.png" alt="Diavolo" class="product__img">
                     <div class="product__content">
@@ -291,13 +291,13 @@
                                 <span class="product__price-value">8.70</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
             </div>
 
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product catalog__product">
                     <img src="img/section-catalog/9.png" alt="Volcano" class="product__img">
                     <div class="product__content">
@@ -315,7 +315,7 @@
                                 <span class="product__price-value">13.00</span>
                                 <span class="product__currency">&#x20AC;</span>
                             </div>
-                            <button class="btn product__btn" type="button">order</button>
+                            <button class="btn product__btn"  data-popup="popup-order" type="button">order</button>
                         </div>
                     </footer>
                 </div>
@@ -327,7 +327,7 @@
 <!--section-catalog-->
 
 <!--section-about-->
-<section class="section section-about">
+<section class="section section-about" id="section-about">
     <img src="img/section-about/bg.jpeg" alt="About" class="section-about__img">
     <div class="container section-about__container">
         <div class="section-about__content">
@@ -342,14 +342,14 @@
 <!--section-about-->
 
 <!-- section-contacts -->
-<section class="section section-contacts">
+<section class="section section-contacts" id="section-contacts">
     <div class="container section-contacts__container">
         <header class="section__header">
             <h2 class="page-title section-contacts__title">Contacts</h2>
         </header>
         <div class="contacts">
             <div class="contacts__start">
-                <div class="contacts__map"></div>
+                <div class="contacts__map" id="ymap"></div>
             </div>
             <div class="contacts__end">
                 <div class="contacts__item">
@@ -392,25 +392,25 @@
 <!-- footer-page -->
 
 <!-- popup-menu -->
-<div class="popup popup__menu">
+<div class="popup popup-menu">
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content popup__content--fluid popup__content--centered">
-                <div class="btn-close popup__btn-close"></div>
+                <div class="btn-close popup__btn-close popup-close"></div>
                 <nav class="mobile-menu popup__mobile-menu">
                     <ul class="mobile-menu__ul">
                         <li class="mobile-menu__li">
-                            <a href="#" class="mobile-menu__link">
+                            <a href="#" class="mobile-menu__link popup-close" data-scroll-to="section-catalog">
                               Pizza
                             </a>
                         </li>
                         <li class="mobile-menu__li">
-                            <a href="#" class="mobile-menu__link">
+                            <a href="#" class="mobile-menu__link popup-close" data-scroll-to="section-about">
                                 About
                             </a>
                         </li>
                         <li class="mobile-menu__li">
-                            <a href="#" class="mobile-menu__link">
+                            <a href="#" class="mobile-menu__link popup-close" data-scroll-to="section-contacts">
                                 Contacts
                             </a>
                         </li>
@@ -442,22 +442,22 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content">
-                <div class="btn-close popup__btn-close"></div>
+                <div class="btn-close popup__btn-close popup-close"></div>
                 <h2 class="popup__title page-title">Lorem ipsum</h2>
                 <p class="popup__subtitle popup__subtitle--order">Lorem ipsum dolor sit amet? Itaque, voluptate.</p>
                 <div class="order">
                     <img src="img/section-catalog/1.png" alt="Order image" class="order__img">
                     <h3 class="order__title">
-                        <span>Margherita</span>
-                        <span>6.80</span>&#x20AC;
+                        <span class="order-product-title">Margherita</span>
+                        <span class="order-product-price">6.80</span>&#x20AC;
                     </h3>
                     <p class="order__size">
                         500 g
                     </p>
                     <form class="form">
-                        <input type="hidden" name="pizza">
-                        <input type="hidden" name="size">
-                        <input type="hidden" name="price">
+                        <input class="order-data-title" type="hidden" name="pizza">
+                        <input class="order-data-size" type="hidden" name="size">
+                        <input class="order-data-price" type="hidden" name="price">
                         <label>
                             <input type="text" class="form__input" placeholder="Name" name="name" required>
                         </label>
@@ -485,7 +485,7 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content">
-                <div class="btn-close popup__btn-close"></div>
+                <div class="btn-close popup__btn-close popup-close"></div>
                 <h2 class="popup__title page-title">Successfully sent</h2>
                 <p class="popup__subtitle">We have already started baking your pizza</p>
             </div>
@@ -499,14 +499,23 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content">
-                <div class="btn-close popup__btn-close"></div>
+                <div class="btn-close popup__btn-close popup-close"></div>
                 <h2 class="popup__title page-title">Error!</h2>
-                <p class="popup__subtitle">Please, call on <a  class="popup__link" href="tel:39999999999">+3(999) 999-99-99</a></p>
+                <p class="popup__subtitle">Please, call on <a class="popup__link" href="tel:39999999999">+3(999) 999-99-99</a></p>
             </div>
         </div>
     </div>
 </div>
 <!--popup-error-->
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+
+<script src="js/myLib.js"></script>
+<script src="js/header.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/scrollTo.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/product.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>

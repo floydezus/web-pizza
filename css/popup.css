@@ -65,9 +65,6 @@
     font-size: 24px;
 }
 
-.popup__subtitle--order {
-    max-width: 380px;
-}
 
 .popup__phone, .popup__mobile-menu {
     margin-bottom: 30px;
@@ -93,10 +90,6 @@
     .popup__subtitle {
         font-size: 18px;
 
-    }
-
-    .popup__subtitle--order {
-        max-width: 260px;
     }
     
 }

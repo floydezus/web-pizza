@@ -40,7 +40,7 @@
     font-weight: 900;
     font-size: 18px;
     position: relative;
-    transition: color .2s;
+    transition: color .2s, padding-top .2s;
 }
 
 .header-page__link:before {
@@ -72,6 +72,11 @@
 .header-page__hamburger {
     display: none;
     margin-right: -15px;
+}
+
+.header-page.is-active .header-page__link {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 @media (max-width: 1200px) {
